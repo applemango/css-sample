@@ -1,0 +1,147 @@
+* {margin: 0;padding: 0; z-index: 100;position: inherit;}
+a {color: inherit}
+body {
+    background-color: #f5f5f5;
+}
+/*
+#card_list {
+    display: grid;
+    align-items: start;
+    grid-column-gap: 24px;
+    /*grid-template-columns: repeat(3,minmax(0,1fr));*/
+    /*grid-template-columns: 2fr;
+}*/
+#card_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.line {
+    display: grid;
+    grid-template-columns: minmax(0,1fr);
+    row-gap: 24px;
+}
+.card_main {
+    margin: 10px;
+    padding: 0px;
+    padding-bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    /*border: 1px solid rgba(255, 255, 255, 0.3);*/
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.card_main:hover {
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+.card_tow {
+    display: flex;
+}
+.card_tow:hover {
+    transform: scale(1.00);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+div#card_n-1 {
+    width: 300px;
+    height: 450px;
+}
+div#card_n-1 > div {
+    width: 100%;
+    height: 100%;
+}
+div#card_n-1 > p {
+    position: relative;
+    top: -25px;
+    color: #fff;
+    margin-left: 10px;
+}
+div#card_n-1 > div > img {
+    border-radius: 8px;
+    width: 300px;
+    height: auto;
+}
+div#card_n-1 > div > div:nth-child(2) {
+    width: 130px;
+    height: 250px;
+    position: relative;
+    top: -420px;
+    left: 20px;
+}
+div#card_n-1 > div > div:nth-child(3) {
+    width: 100px;
+    height: 150px;
+    position: relative;
+    top: -480px;
+    left: 170px;
+}
+
+
+div#card_n-2 {
+    width: 600px;
+    height: 200px;
+}
+div#card_n-3 {
+    width: 200px;
+    height: 200px;
+}
+div#card_n-4 {
+    overflow: scroll;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+div#card_n-5 {
+    width: 300px;
+    height: 450px;
+}
+div#card_n-5 > div {
+    width: 100%;
+    height: 100%;
+}
+div#card_n-5 > p {
+    position: relative;
+    top: -25px;
+    color: #fff;
+    margin-left: 10px;
+}
+div#card_n-5 > div > img {
+    border-radius: 8px;
+    width: 300px;
+    height: auto;
+}
+div#card_n-5 > div > div {
+    width: 300px;
+    height: 450px;
+    position: relative;
+    top: -460px;
+    left: 0px;
+}
+
+
+
+div#card_n-6 {
+    width: 600px;
+    height: 200px;
+}
+
+div#card_n-7 {
+    width: 600px;
+    height: 200px;
+    color: #0099ff;
+}
+.typing-animation {
+    position: relative;
+    top: 45%;
+    margin: 0 auto;
+}
