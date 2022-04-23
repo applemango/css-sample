@@ -35,7 +35,8 @@
 
 .scrollbar::-webkit-scrollbar {border-radius: 10px;width: 7px;height: 7px;}
 .scrollbar::-webkit-scrollbar-track {border-radius: 10px;background: #fff;}
-.scrollbar::-webkit-scrollbar-thumb {border-radius: 10px;background: #0099ff;}
+.scrollbar::-webkit-scrollbar-thumb {border-radius: 10px;background: var(--main-color);}
+
 
 
 .search_box > input.search {
@@ -43,14 +44,14 @@
     padding-right: 50px;
     border-radius: 10px;
     outline: none;
-    border: 2px solid #0099ff;
+    border: 2px solid var(--main-color);
 }
 .search_box > button.search_btn {
     margin-left: 5px;
     width: 60px;
     height: 44px;
     border-radius: 10px;
-    border: 2px solid #0099ff;
+    border: 2px solid var(--main-color);
     background-color: #fff;
 }
 .search_box > button.search_btn > ion-icon {
@@ -64,10 +65,10 @@
     width: 30px;
     height: 30px;
     border-radius: 5px;
-    border: 2px solid #0099ff;
+    border: 2px solid var(--main-color);
     background-color: #fff;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: all 0.3s;
 }
 :is(.search_box:hover) > button.search_btn_delete {
     opacity: 1;
@@ -87,6 +88,7 @@
     left: calc(50% - 200px);
     width: 400px;
     height: 40px;
+    transition: all 0.5s;
 }
 
 
@@ -111,4 +113,43 @@
     50% {
         border-color: transparent
     }
+}
+
+
+
+.color-list_mini {
+    position: absolute;
+    z-index: 200;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.color-list_mini ul {
+    display: flex;
+    list-style: none;
+    left: 485px;
+    top: 5px;
+    z-index: 200;
+}
+.color-list_mini ul li {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 2px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: var(--color);
+    z-index: 200;
+    transition: all 0.5s;
+}
+.card_main:hover > .color-list_mini {
+    opacity: 1;
+}
+.color-list_mini ul li:hover {
+    transform: scale(1.1);
+}
+
+.selection_color  :is(p,h1,h2,h3,h4,h5,h6)::selection {
+    color: #fff;
+    background-color: #ff0099;
 }
