@@ -153,3 +153,24 @@
     color: #fff;
     background-color: #ff0099;
 }
+
+.text_decoration_1::after {
+    content: '';
+    position: absolute;
+    top: calc(80% - 20%);
+    left: 0;
+    height: 20%;
+    background-color: var(--color-bg);
+    opacity: 0.5;
+    z-index: -1;
+    width: 100%;
+    animation: text_decoration_1 0.65s ease 0s infinite normal;
+}
+@keyframes text_decoration_1 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
